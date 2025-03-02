@@ -1,0 +1,14 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dhirajlingayat/config-repo # Change to your Git repo
+          default-label: main
+          clone-on-start: true
+          search-paths: "{application}"
+  application:
+    name: config-server
