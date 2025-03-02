@@ -6,8 +6,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/dhirajlingayat/config-repo # Change to your Git repo
-          default-label: main
+          uri: https://github.com/dhirajlingayat/config-repo 
           clone-on-start: true
           search-paths: "{application}"
   application:
